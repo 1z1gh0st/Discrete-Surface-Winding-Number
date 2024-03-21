@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/surface_winding_number.dir/src/main.cpp.o"
+  "CMakeFiles/surface_winding_number.dir/src/main.cpp.o.d"
+  "CMakeFiles/surface_winding_number.dir/src/winding.cpp.o"
+  "CMakeFiles/surface_winding_number.dir/src/winding.cpp.o.d"
+  "surface_winding_number"
+  "surface_winding_number.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/surface_winding_number.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

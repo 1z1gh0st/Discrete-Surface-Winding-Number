@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-src"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-build"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/tmp"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/src"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-src"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-build"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/tmp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/src"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-src"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-build"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/tmp"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/src"
-  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-src"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-build"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/tmp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/src"
+  "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

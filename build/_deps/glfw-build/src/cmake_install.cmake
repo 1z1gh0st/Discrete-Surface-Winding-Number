@@ -1,4 +1,4 @@
-# Install script for directory: /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/_deps/glfw-src/src
+# Install script for directory: /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/_deps/glfw-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

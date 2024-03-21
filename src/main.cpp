@@ -1,6 +1,10 @@
 #include <igl/opengl/glfw/Viewer.h>
 #include <igl/readPLY.h>
 #include <iostream>
+#include <vector>
+#include <set>
+#include <unordered_set>
+#include <unordered_map>
 
 #include "winding.h"
 
@@ -32,6 +36,28 @@ int main(int argc, char *argv[]) {
         std::cout << "File loaded." << std::endl;
     }
 
+    // What do we need?
+    //     - Loop Gamma
+    //     - edge lengths l
+    //     - corner angles theta
+    //     - linear program parm eps
+    VectorXi Gamma(0, 1, 2, 3);
+    VectorXd l;
+    MatrixXd theta;
+    float eps = 0.001;
+
+    // Output: w
+    VectorXd w;
+
+    SurfaceWindingNumber(
+        V, 
+        E,
+        F, 
+        l, 
+        theta, 
+        Gamma, 
+        eps, 
+        w);
 
     std::cout << "Opening mesh viewer..." << std::endl;
     igl::opengl::glfw::Viewer viewer;

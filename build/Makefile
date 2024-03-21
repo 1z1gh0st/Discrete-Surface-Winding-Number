@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation
+CMAKE_SOURCE_DIR = /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build
+CMAKE_BINARY_DIR = /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/CMakeFiles /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/CMakeFiles /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/philipwarton/Library/CloudStorage/Box-Box/phd/Winter-2024/Geometry-Processing/Final-Project/Implementation/Discrete-Surface-Winding-Number/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -188,17 +188,17 @@ igl_opengl/fast:
 .PHONY : igl_opengl/fast
 
 #=============================================================================
-# Target rules for targets named example
+# Target rules for targets named surface_winding_number
 
 # Build rule for target.
-example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example
-.PHONY : example
+surface_winding_number: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 surface_winding_number
+.PHONY : surface_winding_number
 
 # fast build rule for target.
-example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-.PHONY : example/fast
+surface_winding_number/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/build
+.PHONY : surface_winding_number/fast
 
 #=============================================================================
 # Target rules for targets named igl_core
@@ -244,7 +244,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -252,7 +252,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -260,8 +260,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/winding.o: src/winding.cpp.o
+.PHONY : src/winding.o
+
+# target to build an object file
+src/winding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/winding.cpp.o
+.PHONY : src/winding.cpp.o
+
+src/winding.i: src/winding.cpp.i
+.PHONY : src/winding.i
+
+# target to preprocess a source file
+src/winding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/winding.cpp.i
+.PHONY : src/winding.cpp.i
+
+src/winding.s: src/winding.cpp.s
+.PHONY : src/winding.s
+
+# target to generate assembly for a file
+src/winding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_winding_number.dir/build.make CMakeFiles/surface_winding_number.dir/src/winding.cpp.s
+.PHONY : src/winding.cpp.s
 
 # Help Target
 help:
@@ -275,15 +299,18 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... example"
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... igl_core"
 	@echo "... igl_glfw"
 	@echo "... igl_opengl"
+	@echo "... surface_winding_number"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/winding.o"
+	@echo "... src/winding.i"
+	@echo "... src/winding.s"
 .PHONY : help
 
 
